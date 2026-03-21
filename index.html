@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Terminal Portfolio</title>
+    <meta name="description" content="Developer portfolio with retro terminal aesthetic">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+    <div class="terminal-container">
+        <header>
+            <div id="boot-sequence"></div>
+            <h1 class="glitch" data-text="[Your Name]">[Your Name]</h1>
+            <p class="subtitle">> Full-Stack Developer | Open Source Enthusiast</p>
+            <nav>
+                <ul>
+                    <li><a href="#projects">> ./projects</a></li>
+                    <li><a href="#stats">> ./github_stats</a></li>
+                    <li><a href="#stack">> ./tech_stack</a></li>
+                    <li><a href="#blog">> ./blog</a></li>
+                    <li><a href="#contact">> ./contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="projects">
+                <h2>> ls -l projects/</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>[Project Name 1]</h3>
+                        <p>[Brief description of the open source project and its impact.]</p>
+                        <a href="[Link]" target="_blank">[View Source]</a>
+                    </article>
+                    <article class="card">
+                        <h3>[Project Name 2]</h3>
+                        <p>[Another detailed description of an open source effort.]</p>
+                        <a href="[Link]" target="_blank">[View Source]</a>
+                    </article>
+                    <article class="card">
+                        <h3>[Project Name 3]</h3>
+                        <p>[Third project description. Placeholders ready.]</p>
+                        <a href="[Link]" target="_blank">[View Source]</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="stats">
+                <h2>> cat github_stats.json</h2>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <span class="stat-label">Commits (YTD):</span>
+                        <span class="stat-value">[1,234]</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Followers:</span>
+                        <span class="stat-value">[128]</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Stars Earned:</span>
+                        <span class="stat-value">[56]</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">PRs Merged:</span>
+                        <span class="stat-value">[42]</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stack">
+                <h2>> neofetch</h2>
+                <div class="tech-stack">
+                    <div class="stack-category">
+                        <h3>Frontend</h3>
+                        <ul class="skills">
+                            <li>React</li>
+                            <li>Vue</li>
+                            <li>TypeScript</li>
+                            <li>CSS/Sass</li>
+                        </ul>
+                    </div>
+                    <div class="stack-category">
+                        <h3>Backend</h3>
+                        <ul class="skills">
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Go</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="stack-category">
+                        <h3>Tools</h3>
+                        <ul class="skills">
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Linux</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog">
+                <h2>> tail -n 3 blog/latest.log</h2>
+                <div class="blog-posts">
+                    <div class="post">
+                        <span class="date">[YYYY-MM-DD]</span>
+                        <a href="[Link]">[Blog Post Title 1]</a>
+                    </div>
+                    <div class="post">
+                        <span class="date">[YYYY-MM-DD]</span>
+                        <a href="[Link]">[Blog Post Title 2]</a>
+                    </div>
+                    <div class="post">
+                        <span class="date">[YYYY-MM-DD]</span>
+                        <a href="[Link]">[Blog Post Title 3]</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>> ./contact.sh</h2>
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">NAME="</label>
+                        <input type="text" id="name" name="name" placeholder="[Your Name]" required>
+                        <span>"</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL="</label>
+                        <input type="email" id="email" name="email" placeholder="[Your Email]" required>
+                        <span>"</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="block-label">MESSAGE=</label>
+                        <textarea id="message" name="message" rows="5" placeholder="[Your Message]" required></textarea>
+                        <span class="block-label">EOF</span>
+                    </div>
+                    <button type="submit" class="submit-btn">> EXECUTE</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>sys.exit(0) | &copy; 2026 [Your Name]</p>
+            <div id="cursor" class="blinking-cursor"></div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
